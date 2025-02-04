@@ -1,0 +1,175 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "soybean oil",
+        "states": [
+          "unopened"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "soybean oil",
+        "states": [
+          "opened"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "soybean oil"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "cultured buttermilk",
+        "states": [
+          "unopened"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "soybean oil"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "cultured buttermilk",
+        "states": [
+          "opened"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "soybean oil",
+          "cultured buttermilk"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "water",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "soybean oil",
+          "cultured buttermilk"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "soybean oil",
+          "cultured buttermilk",
+          "water"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "egg yolk",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "soybean oil",
+          "cultured buttermilk",
+          "water"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "soybean oil",
+          "cultured buttermilk",
+          "water",
+          "egg yolk"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "soybean oil",
+          "cultured buttermilk",
+          "water",
+          "egg yolk"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "whisk",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "ranch dressing"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

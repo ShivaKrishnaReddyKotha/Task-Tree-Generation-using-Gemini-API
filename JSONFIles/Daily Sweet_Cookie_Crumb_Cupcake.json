@@ -1,0 +1,431 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "Oreo cookies",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "Cutting board",
+        "states": [],
+        "ingredients": [
+          "Oreo cookies"
+        ],
+        "container": null
+      },
+      {
+        "label": "Oreo cookies",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Oreo cookies",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      },
+      {
+        "label": "Knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "chop",
+    "output_nodes": [
+      {
+        "label": "Oreo cookies",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Oreo cookies",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "Bowl",
+        "states": [],
+        "ingredients": [
+          "Oreo cookies"
+        ],
+        "container": null
+      },
+      {
+        "label": "Oreo cookies",
+        "states": [
+          "chopped"
+        ],
+        "ingredients": [],
+        "container": "Bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Devil's Food Cake mix",
+        "states": [
+          "boxed"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Devil's Food Cake mix"
+        ],
+        "container": null
+      },
+      {
+        "label": "Devil's Food Cake mix",
+        "states": [
+          "powdered"
+        ],
+        "ingredients": [],
+        "container": "Mixing bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Water",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "Bottle"
+      },
+      {
+        "label": "Cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "Cup",
+        "states": [],
+        "ingredients": [
+          "Water"
+        ],
+        "container": null
+      },
+      {
+        "label": "Water",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "Cup"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Cup",
+        "states": [],
+        "ingredients": [
+          "Water"
+        ],
+        "container": null
+      },
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Devil's Food Cake mix"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Devil's Food Cake mix",
+          "Water"
+        ],
+        "container": null
+      },
+      {
+        "label": "Water",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "Mixing bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Devil's Food Cake mix",
+          "Water"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Cake batter"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Bowl",
+        "states": [],
+        "ingredients": [
+          "Oreo cookies"
+        ],
+        "container": null
+      },
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Cake batter"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Cake batter",
+          "Oreo cookies"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Cake batter",
+          "Oreo cookies"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Cupcake batter"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Cupcake batter"
+        ],
+        "container": null
+      },
+      {
+        "label": "Cupcake pan",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "Cupcake pan",
+        "states": [],
+        "ingredients": [
+          "Cupcake batter"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Cupcake pan",
+        "states": [],
+        "ingredients": [
+          "Cupcake batter"
+        ],
+        "container": null
+      },
+      {
+        "label": "Oven",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "bake",
+    "output_nodes": [
+      {
+        "label": "Cupcake pan",
+        "states": [],
+        "ingredients": [
+          "Cupcakes"
+        ],
+        "container": null
+      },
+      {
+        "label": "Oven",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Cupcake pan",
+        "states": [],
+        "ingredients": [
+          "Cupcakes"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "cool",
+    "output_nodes": [
+      {
+        "label": "Cupcake pan",
+        "states": [],
+        "ingredients": [
+          "Cooled cupcakes"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Cupcake pan",
+        "states": [],
+        "ingredients": [
+          "Cooled cupcakes"
+        ],
+        "container": null
+      },
+      {
+        "label": "Vanilla icing",
+        "states": [
+          "contained"
+        ],
+        "ingredients": [],
+        "container": "Container"
+      }
+    ],
+    "motion_node": "frost",
+    "output_nodes": [
+      {
+        "label": "Cupcake pan",
+        "states": [],
+        "ingredients": [
+          "Frosted cupcakes"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

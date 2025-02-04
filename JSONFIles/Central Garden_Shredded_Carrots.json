@@ -1,0 +1,143 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "carrot",
+        "states": [
+          "whole",
+          "unpeeled"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "peeler",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "peel",
+    "output_nodes": [
+      {
+        "label": "carrot",
+        "states": [
+          "whole",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "carrot",
+        "states": [
+          "whole",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "carrot",
+        "states": [
+          "whole",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [
+          "carrot"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "carrot",
+        "states": [
+          "whole",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "shred",
+    "output_nodes": [
+      {
+        "label": "carrot",
+        "states": [
+          "shredded"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "carrot",
+        "states": [
+          "shredded"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "carrot",
+        "states": [
+          "shredded"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "carrot"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

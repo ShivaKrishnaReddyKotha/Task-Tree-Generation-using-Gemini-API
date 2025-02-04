@@ -1,0 +1,227 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "wheat flour",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "malted barley flour",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "water",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "high fructose corn syrup",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "yeast",
+        "states": [
+          "granular"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "soybean oil",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "salt",
+        "states": [
+          "granular"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add-and-mix",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "dough"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "dough"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "knead",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "dough"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "dough"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "let-rise",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "dough"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "dough"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "divide-and-shape",
+    "output_nodes": [
+      {
+        "label": "roll",
+        "states": [
+          "uncooked"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "beef patty",
+        "states": [
+          "raw"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cook",
+    "output_nodes": [
+      {
+        "label": "beef patty",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "roll",
+        "states": [
+          "uncooked"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "toast",
+    "output_nodes": [
+      {
+        "label": "roll",
+        "states": [
+          "toasted"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "roll",
+        "states": [
+          "toasted"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "beef patty",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "assemble",
+    "output_nodes": [
+      {
+        "label": "hamburger",
+        "states": [],
+        "ingredients": [
+          "beef patty"
+        ],
+        "container": "roll"
+      }
+    ]
+  }
+]

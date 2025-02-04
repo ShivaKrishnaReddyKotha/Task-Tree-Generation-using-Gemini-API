@@ -1,0 +1,296 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "Cooked Boneless skinless chicken breast with rib meat",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cut",
+    "output_nodes": [
+      {
+        "label": "Cooked Boneless skinless chicken breast with rib meat",
+        "states": [
+          "bite-sized pieces"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "yellow corn flour",
+          "bleached wheat flour",
+          "modified corn starch",
+          "spices",
+          "wheat starch",
+          "onion powder",
+          "extractives of turmeric",
+          "spice extractive",
+          "salt"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "yellow corn flour",
+          "bleached wheat flour",
+          "modified corn starch",
+          "spices",
+          "wheat starch",
+          "onion powder",
+          "extractives of turmeric",
+          "spice extractive",
+          "salt"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "dry coating mix"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Cooked Boneless skinless chicken breast with rib meat",
+        "states": [
+          "bite-sized pieces"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "dry coating mix"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "coat",
+    "output_nodes": [
+      {
+        "label": "Cooked Boneless skinless chicken breast with rib meat",
+        "states": [
+          "coated"
+        ],
+        "ingredients": [
+          "dry coating mix"
+        ],
+        "container": "mixing bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "vegetable oil",
+        "states": [],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "vegetable oil"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "vegetable oil"
+        ],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "place",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "vegetable oil"
+        ],
+        "container": "stove"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn on",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Cooked Boneless skinless chicken breast with rib meat",
+        "states": [
+          "coated"
+        ],
+        "ingredients": [
+          "dry coating mix"
+        ],
+        "container": "mixing bowl"
+      },
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "vegetable oil"
+        ],
+        "container": "stove"
+      }
+    ],
+    "motion_node": "fry",
+    "output_nodes": [
+      {
+        "label": "Cooked Boneless skinless chicken breast with rib meat",
+        "states": [
+          "crispy"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn off",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Cooked Boneless skinless chicken breast with rib meat",
+        "states": [
+          "crispy"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ],
+    "motion_node": "remove",
+    "output_nodes": [
+      {
+        "label": "Cooked Boneless skinless chicken breast with rib meat",
+        "states": [
+          "crispy"
+        ],
+        "ingredients": [],
+        "container": "serving plate"
+      }
+    ]
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "tuna can",
+        "states": [
+          "closed"
+        ],
+        "ingredients": [
+          "tuna",
+          "water",
+          "salt"
+        ],
+        "container": null
+      },
+      {
+        "label": "can opener",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "open can",
+    "output_nodes": [
+      {
+        "label": "tuna can",
+        "states": [
+          "open"
+        ],
+        "ingredients": [
+          "tuna",
+          "water",
+          "salt"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "tuna can",
+        "states": [
+          "open"
+        ],
+        "ingredients": [
+          "tuna",
+          "water",
+          "salt"
+        ],
+        "container": null
+      },
+      {
+        "label": "colander",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "drain",
+    "output_nodes": [
+      {
+        "label": "tuna can",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "colander",
+        "states": [],
+        "ingredients": [
+          "tuna"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "celery",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "peeler",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "peel",
+    "output_nodes": [
+      {
+        "label": "celery",
+        "states": [
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "celery",
+        "states": [
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "dice",
+    "output_nodes": [
+      {
+        "label": "celery",
+        "states": [
+          "diced"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "tuna",
+        "states": [],
+        "ingredients": [],
+        "container": "colander"
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "tuna"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "tuna"
+        ],
+        "container": null
+      },
+      {
+        "label": "celery",
+        "states": [
+          "diced"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "tuna",
+          "celery"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "tuna",
+          "celery"
+        ],
+        "container": null
+      },
+      {
+        "label": "mayonnaise",
+        "states": [],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ],
+    "motion_node": "add to taste",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "tuna",
+          "celery",
+          "mayonnaise"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "tuna",
+          "celery",
+          "mayonnaise"
+        ],
+        "container": null
+      },
+      {
+        "label": "lemon juice",
+        "states": [],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ],
+    "motion_node": "add to taste",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "tuna",
+          "celery",
+          "mayonnaise",
+          "lemon juice"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "tuna",
+          "celery",
+          "mayonnaise",
+          "lemon juice"
+        ],
+        "container": null
+      },
+      {
+        "label": "black pepper",
+        "states": [],
+        "ingredients": [],
+        "container": "grinder"
+      }
+    ],
+    "motion_node": "add to taste",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "tuna",
+          "celery",
+          "mayonnaise",
+          "lemon juice",
+          "black pepper"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "tuna",
+          "celery",
+          "mayonnaise",
+          "lemon juice",
+          "black pepper"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "tuna salad"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,221 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "sugar",
+        "states": [
+          "granulated"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "margarine",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "sugar",
+          "margarine"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "sugar",
+          "margarine"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "cream together",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "creamed sugar and margarine"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "creamed sugar and margarine"
+        ],
+        "container": null
+      },
+      {
+        "label": "eggs",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add and beat",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "batter with eggs"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "batter with eggs"
+        ],
+        "container": null
+      },
+      {
+        "label": "enriched bleached wheat flour",
+        "states": [
+          "powdered"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "gradually add and mix",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "cookie dough"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "cookie dough"
+        ],
+        "container": null
+      },
+      {
+        "label": "semi sweet chocolate chips",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "chocolate flavoured confectionary chips",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "fold in",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "cookie dough with chocolate chips"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "cookie dough with chocolate chips"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "drop by rounded tablespoons onto ungreased cookie sheets",
+    "output_nodes": [
+      {
+        "label": "cookie sheets",
+        "states": [],
+        "ingredients": [
+          "cookie dough balls"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "cookie sheets",
+        "states": [],
+        "ingredients": [
+          "cookie dough balls"
+        ],
+        "container": null
+      },
+      {
+        "label": "oven",
+        "states": [
+          "preheated to 375 degrees F (190 degrees C)"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "bake for 9 to 11 minutes",
+    "output_nodes": [
+      {
+        "label": "cookie sheets",
+        "states": [],
+        "ingredients": [
+          "baked cookies"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

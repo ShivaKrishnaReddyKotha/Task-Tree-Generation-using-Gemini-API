@@ -1,0 +1,282 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "bottle",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "water",
+        "states": [
+          "unmeasured"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "measure and pour",
+    "output_nodes": [
+      {
+        "label": "bottle",
+        "states": [],
+        "ingredients": [
+          "water"
+        ],
+        "container": null
+      },
+      {
+        "label": "water",
+        "states": [
+          "measured"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bottle",
+        "states": [],
+        "ingredients": [
+          "water"
+        ],
+        "container": null
+      },
+      {
+        "label": "distilled vinegar",
+        "states": [
+          "unmeasured"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "measure and pour",
+    "output_nodes": [
+      {
+        "label": "bottle",
+        "states": [],
+        "ingredients": [
+          "water",
+          "distilled vinegar"
+        ],
+        "container": null
+      },
+      {
+        "label": "distilled vinegar",
+        "states": [
+          "measured"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bottle",
+        "states": [],
+        "ingredients": [
+          "water",
+          "distilled vinegar"
+        ],
+        "container": null
+      },
+      {
+        "label": "vegetable oil",
+        "states": [
+          "unmeasured"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "measure and pour",
+    "output_nodes": [
+      {
+        "label": "bottle",
+        "states": [],
+        "ingredients": [
+          "water",
+          "distilled vinegar",
+          "vegetable oil"
+        ],
+        "container": null
+      },
+      {
+        "label": "vegetable oil",
+        "states": [
+          "measured"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bottle",
+        "states": [],
+        "ingredients": [
+          "water",
+          "distilled vinegar",
+          "vegetable oil"
+        ],
+        "container": null
+      },
+      {
+        "label": "sugar",
+        "states": [
+          "unmeasured"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "measure and pour",
+    "output_nodes": [
+      {
+        "label": "bottle",
+        "states": [],
+        "ingredients": [
+          "water",
+          "distilled vinegar",
+          "vegetable oil",
+          "sugar"
+        ],
+        "container": null
+      },
+      {
+        "label": "sugar",
+        "states": [
+          "measured"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bottle",
+        "states": [],
+        "ingredients": [
+          "water",
+          "distilled vinegar",
+          "vegetable oil",
+          "sugar"
+        ],
+        "container": null
+      },
+      {
+        "label": "apple cider vinegar",
+        "states": [
+          "unmeasured"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "measure and pour",
+    "output_nodes": [
+      {
+        "label": "bottle",
+        "states": [],
+        "ingredients": [
+          "water",
+          "distilled vinegar",
+          "vegetable oil",
+          "sugar",
+          "apple cider vinegar"
+        ],
+        "container": null
+      },
+      {
+        "label": "apple cider vinegar",
+        "states": [
+          "measured"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bottle",
+        "states": [],
+        "ingredients": [
+          "water",
+          "distilled vinegar",
+          "vegetable oil",
+          "sugar",
+          "apple cider vinegar"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "shake",
+    "output_nodes": [
+      {
+        "label": "bottle",
+        "states": [
+          "mixed"
+        ],
+        "ingredients": [
+          "Lite Italian Dressing"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

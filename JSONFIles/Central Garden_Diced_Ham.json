@@ -1,0 +1,146 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "ham",
+        "states": [
+          "whole",
+          "cured"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "ham",
+        "states": [
+          "whole",
+          "cured"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [
+          "ham"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "ham",
+        "states": [
+          "whole",
+          "cured"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "slice",
+    "output_nodes": [
+      {
+        "label": "ham",
+        "states": [
+          "sliced",
+          "cured"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "ham",
+        "states": [
+          "sliced",
+          "cured"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "dice",
+    "output_nodes": [
+      {
+        "label": "ham",
+        "states": [
+          "diced",
+          "cured"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "ham",
+        "states": [
+          "diced",
+          "cured"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "ham",
+        "states": [
+          "diced",
+          "cured"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "ham"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

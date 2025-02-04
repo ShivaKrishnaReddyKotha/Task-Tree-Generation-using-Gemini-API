@@ -1,0 +1,328 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "broccoli",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cut florets",
+    "output_nodes": [
+      {
+        "label": "broccoli florets",
+        "states": [
+          "separated"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "broccoli stems",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "broccoli stems",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "peeler",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "peel",
+    "output_nodes": [
+      {
+        "label": "broccoli stems",
+        "states": [
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "broccoli stems",
+        "states": [
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cut",
+    "output_nodes": [
+      {
+        "label": "broccoli pieces",
+        "states": [
+          "cut"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "broccoli florets",
+        "states": [
+          "separated"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "broccoli pieces",
+        "states": [
+          "cut"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "combine",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "broccoli florets",
+          "broccoli pieces"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "broccoli florets",
+          "broccoli pieces"
+        ],
+        "container": null
+      },
+      {
+        "label": "water",
+        "states": [
+          "clean"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ],
+    "motion_node": "rinse",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "broccoli florets",
+          "broccoli pieces"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "water",
+        "states": [
+          "clean"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "fill with water",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "with water"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn on",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "with water"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "place on stove",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "with water",
+          "on stove"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "with water",
+          "on stove"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "wait for boil",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "boiling"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "broccoli florets",
+          "broccoli pieces"
+        ],
+        "container": null
+      },
+      {
+        "label": "pot",
+        "states": [
+          "boiling"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "steam broccoli",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "steamed broccoli"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,293 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "warm water",
+        "states": [
+          "warm"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "yeast",
+        "states": [
+          "granulated"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "sugar",
+        "states": [
+          "granulated"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "yeast mixture"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "flour",
+        "states": [
+          "all-purpose"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "salt",
+        "states": [
+          "granulated"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "flour mixture"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "flour mixture"
+        ],
+        "container": null
+      },
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "yeast mixture"
+        ],
+        "container": null
+      },
+      {
+        "label": "oil",
+        "states": [
+          "vegetable blend"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ],
+    "motion_node": "combine & knead",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "dough"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "dough"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "cover & rest",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "risen dough"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "risen dough",
+        "states": [],
+        "ingredients": [],
+        "container": "mixing bowl"
+      }
+    ],
+    "motion_node": "shape",
+    "output_nodes": [
+      {
+        "label": "pizza crust",
+        "states": [
+          "uncooked"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza crust",
+        "states": [
+          "uncooked"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "pizza sauce",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "spread",
+    "output_nodes": [
+      {
+        "label": "pizza crust",
+        "states": [
+          "uncooked",
+          "with sauce"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza crust",
+        "states": [
+          "uncooked",
+          "with sauce"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mozzarella cheese",
+        "states": [
+          "shredded"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "sprinkle",
+    "output_nodes": [
+      {
+        "label": "pizza",
+        "states": [
+          "uncooked"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza",
+        "states": [
+          "uncooked"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "bake",
+    "output_nodes": [
+      {
+        "label": "pizza",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "slice",
+    "output_nodes": [
+      {
+        "label": "pizza slices",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  }
+]

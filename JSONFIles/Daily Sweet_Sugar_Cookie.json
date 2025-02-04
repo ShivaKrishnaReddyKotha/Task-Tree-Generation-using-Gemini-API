@@ -1,0 +1,177 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "margarine",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "sugar",
+        "states": [
+          "granulated"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add and mix",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "margarine",
+          "sugar"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "margarine",
+          "sugar"
+        ],
+        "container": null
+      },
+      {
+        "label": "eggs",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "crack and mix",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "margarine",
+          "sugar",
+          "eggs"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "margarine",
+          "sugar",
+          "eggs"
+        ],
+        "container": null
+      },
+      {
+        "label": "enriched bleached wheat flour",
+        "states": [
+          "powdered"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add and mix",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "margarine",
+          "sugar",
+          "eggs",
+          "enriched bleached wheat flour"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "margarine",
+          "sugar",
+          "eggs",
+          "enriched bleached wheat flour"
+        ],
+        "container": null
+      },
+      {
+        "label": "water",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ],
+    "motion_node": "add and mix",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "margarine",
+          "sugar",
+          "eggs",
+          "enriched bleached wheat flour",
+          "water"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "margarine",
+          "sugar",
+          "eggs",
+          "enriched bleached wheat flour",
+          "water"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "knead",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "sugar cookie dough"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

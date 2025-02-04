@@ -1,0 +1,473 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "water",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water"
+        ],
+        "container": null
+      },
+      {
+        "label": "water",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water"
+        ],
+        "container": null
+      },
+      {
+        "label": "skim milk",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water",
+          "skim milk"
+        ],
+        "container": null
+      },
+      {
+        "label": "skim milk",
+        "states": [
+          "liquid"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water",
+          "skim milk"
+        ],
+        "container": null
+      },
+      {
+        "label": "modified corn starch",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water",
+          "skim milk",
+          "modified corn starch"
+        ],
+        "container": null
+      },
+      {
+        "label": "modified corn starch",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water",
+          "skim milk",
+          "modified corn starch"
+        ],
+        "container": null
+      },
+      {
+        "label": "whey",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water",
+          "skim milk",
+          "modified corn starch",
+          "whey"
+        ],
+        "container": null
+      },
+      {
+        "label": "whey",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water",
+          "skim milk",
+          "modified corn starch",
+          "whey"
+        ],
+        "container": null
+      },
+      {
+        "label": "cocoa",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water",
+          "skim milk",
+          "modified corn starch",
+          "whey",
+          "cocoa"
+        ],
+        "container": null
+      },
+      {
+        "label": "cocoa",
+        "states": [
+          "powder"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water",
+          "skim milk",
+          "modified corn starch",
+          "whey",
+          "cocoa"
+        ],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "place-on",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water",
+          "skim milk",
+          "modified corn starch",
+          "whey",
+          "cocoa"
+        ],
+        "container": "stove"
+      },
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn-on",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "water",
+          "skim milk",
+          "modified corn starch",
+          "whey",
+          "cocoa"
+        ],
+        "container": "stove"
+      }
+    ],
+    "motion_node": "stir",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "chocolate pudding"
+        ],
+        "container": "stove"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn-off",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "chocolate pudding"
+        ],
+        "container": "stove"
+      }
+    ],
+    "motion_node": "remove",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "chocolate pudding"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "chocolate pudding"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "cup",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "chocolate pudding"
+        ],
+        "container": null
+      },
+      {
+        "label": "chocolate pudding",
+        "states": [
+          "semi-solid"
+        ],
+        "ingredients": [],
+        "container": "cup"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "cup",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "chocolate pudding"
+        ],
+        "container": null
+      },
+      {
+        "label": "whipped topping",
+        "states": [
+          "semi-solid"
+        ],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "cup",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "chocolate pudding",
+          "whipped topping"
+        ],
+        "container": null
+      },
+      {
+        "label": "whipped topping",
+        "states": [
+          "semi-solid"
+        ],
+        "ingredients": [],
+        "container": "cup"
+      }
+    ]
+  }
+]

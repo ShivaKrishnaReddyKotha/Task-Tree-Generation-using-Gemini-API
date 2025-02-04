@@ -1,0 +1,216 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "onion",
+        "states": [
+          "whole",
+          "unpeeled"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "peeler",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "peel",
+    "output_nodes": [
+      {
+        "label": "onion",
+        "states": [
+          "whole",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "onion",
+        "states": [
+          "whole",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "onion",
+        "states": [
+          "whole",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [
+          "onion"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "onion",
+        "states": [
+          "whole",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cut-in-half",
+    "output_nodes": [
+      {
+        "label": "onion",
+        "states": [
+          "halved",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "onion",
+        "states": [
+          "halved",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "slice",
+    "output_nodes": [
+      {
+        "label": "onion",
+        "states": [
+          "sliced",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "onion",
+        "states": [
+          "sliced",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "dice",
+    "output_nodes": [
+      {
+        "label": "onion",
+        "states": [
+          "diced",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [
+          "onion"
+        ],
+        "container": null
+      },
+      {
+        "label": "onion",
+        "states": [
+          "diced",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "transfer",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "onion"
+        ],
+        "container": null
+      },
+      {
+        "label": "onion",
+        "states": [
+          "diced",
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ]
+  }
+]

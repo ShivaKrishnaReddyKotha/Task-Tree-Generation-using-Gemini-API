@@ -1,0 +1,118 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "grape tomatoes",
+        "states": [
+          "unwashed"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "grape tomatoes",
+        "states": [
+          "unwashed"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "grape tomatoes"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "grape tomatoes"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "fill with water",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "grape tomatoes"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "grape tomatoes"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "swirl",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "grape tomatoes"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "grape tomatoes"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "drain water",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "grape tomatoes"
+        ],
+        "container": null
+      },
+      {
+        "label": "grape tomatoes",
+        "states": [
+          "washed"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ]
+  }
+]

@@ -1,0 +1,476 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "pork loin",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "pork loin",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [
+          "pork loin"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pork loin",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cut",
+    "output_nodes": [
+      {
+        "label": "pork loin",
+        "states": [
+          "cubed"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "pork loin",
+        "states": [
+          "cubed"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "pork loin"
+        ],
+        "container": null
+      },
+      {
+        "label": "pork loin",
+        "states": [
+          "cubed"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "garlic",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "peeler",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "peel",
+    "output_nodes": [
+      {
+        "label": "garlic",
+        "states": [
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "garlic",
+        "states": [
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "mince",
+    "output_nodes": [
+      {
+        "label": "garlic",
+        "states": [
+          "minced"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "pork loin"
+        ],
+        "container": null
+      },
+      {
+        "label": "garlic",
+        "states": [
+          "minced"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "dried oregano",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "black pepper",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "paprika",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "salt",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "pork loin",
+          "garlic",
+          "dried oregano",
+          "black pepper",
+          "paprika",
+          "salt"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "cider vinegar",
+        "states": [],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "pork loin",
+          "garlic",
+          "dried oregano",
+          "black pepper",
+          "paprika",
+          "salt"
+        ],
+        "container": null
+      },
+      {
+        "label": "cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "pork loin",
+          "garlic",
+          "dried oregano",
+          "black pepper",
+          "paprika",
+          "salt",
+          "cider vinegar"
+        ],
+        "container": null
+      },
+      {
+        "label": "cup",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "pork loin",
+          "garlic",
+          "dried oregano",
+          "black pepper",
+          "paprika",
+          "salt",
+          "cider vinegar"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "pork loin",
+          "garlic",
+          "dried oregano",
+          "black pepper",
+          "paprika",
+          "salt",
+          "cider vinegar"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "pork loin",
+          "garlic",
+          "dried oregano",
+          "black pepper",
+          "paprika",
+          "salt",
+          "cider vinegar"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "pork loin",
+          "garlic",
+          "dried oregano",
+          "black pepper",
+          "paprika",
+          "salt",
+          "cider vinegar"
+        ],
+        "container": null
+      },
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "vegetable oil blend",
+        "states": [],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "pork loin",
+          "garlic",
+          "dried oregano",
+          "black pepper",
+          "paprika",
+          "salt",
+          "cider vinegar"
+        ],
+        "container": null
+      },
+      {
+        "label": "cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "pork loin",
+          "garlic",
+          "dried oregano",
+          "black pepper",
+          "paprika",
+          "salt",
+          "cider vinegar",
+          "vegetable oil blend"
+        ],
+        "container": null
+      },
+      {
+        "label": "cup",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "pork loin",
+          "garlic",
+          "dried oregano",
+          "black pepper",
+          "paprika",
+          "salt",
+          "cider vinegar",
+          "vegetable oil blend"
+        ],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cook",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "pork loin",
+          "garlic",
+          "dried oregano",
+          "black pepper",
+          "paprika",
+          "salt",
+          "cider vinegar",
+          "vegetable oil blend"
+        ],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  }
+]

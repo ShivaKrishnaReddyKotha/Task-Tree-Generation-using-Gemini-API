@@ -1,0 +1,200 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "Chicken Breast",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "Chicken Breast",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      },
+      {
+        "label": "Cutting board",
+        "states": [],
+        "ingredients": [
+          "Chicken Breast"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Chicken Breast",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      },
+      {
+        "label": "Knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "slice",
+    "output_nodes": [
+      {
+        "label": "Chicken Breast",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Chicken Breast",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      },
+      {
+        "label": "Knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "dice",
+    "output_nodes": [
+      {
+        "label": "Chicken Breast",
+        "states": [
+          "diced"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Chicken Breast",
+        "states": [
+          "diced"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "Chicken Breast",
+        "states": [
+          "diced"
+        ],
+        "ingredients": [],
+        "container": "Mixing bowl"
+      },
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Chicken Breast"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Salt",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Chicken Breast"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "season",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Chicken Breast",
+          "Salt"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Black Pepper",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Chicken Breast",
+          "Salt"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "season",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Chicken Breast",
+          "Salt",
+          "Black Pepper"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

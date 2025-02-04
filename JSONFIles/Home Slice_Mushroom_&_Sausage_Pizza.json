@@ -1,0 +1,392 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "warm water",
+        "states": [
+          "warm"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "sugar",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "yeast",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "yeast mixture"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "flour",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "salt",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "flour mixture"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "flour mixture"
+        ],
+        "container": null
+      },
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "yeast mixture"
+        ],
+        "container": null
+      },
+      {
+        "label": "vegetable oil blend",
+        "states": [],
+        "ingredients": [],
+        "container": "bottle"
+      }
+    ],
+    "motion_node": "mix and knead",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "pizza dough"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "pizza dough"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "cover and rest",
+    "output_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "risen pizza dough"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mushrooms",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "slice",
+    "output_nodes": [
+      {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [
+          "sliced mushrooms"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": "stove"
+      },
+      {
+        "label": "pork sausage topping",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cook",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "cooked sausage"
+        ],
+        "container": "stove"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mixing bowl",
+        "states": [],
+        "ingredients": [
+          "risen pizza dough"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "shape",
+    "output_nodes": [
+      {
+        "label": "pizza pan",
+        "states": [],
+        "ingredients": [
+          "pizza crust"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza pan",
+        "states": [],
+        "ingredients": [
+          "pizza crust"
+        ],
+        "container": null
+      },
+      {
+        "label": "pizza sauce",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "spread",
+    "output_nodes": [
+      {
+        "label": "pizza pan",
+        "states": [],
+        "ingredients": [
+          "pizza crust",
+          "pizza sauce"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza pan",
+        "states": [],
+        "ingredients": [
+          "pizza crust",
+          "pizza sauce"
+        ],
+        "container": null
+      },
+      {
+        "label": "mozzarella cheese",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "sprinkle",
+    "output_nodes": [
+      {
+        "label": "pizza pan",
+        "states": [],
+        "ingredients": [
+          "pizza crust",
+          "pizza sauce",
+          "mozzarella cheese"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza pan",
+        "states": [],
+        "ingredients": [
+          "pizza crust",
+          "pizza sauce",
+          "mozzarella cheese"
+        ],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [
+          "sliced mushrooms"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "place",
+    "output_nodes": [
+      {
+        "label": "pizza pan",
+        "states": [],
+        "ingredients": [
+          "pizza crust",
+          "pizza sauce",
+          "mozzarella cheese",
+          "sliced mushrooms"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza pan",
+        "states": [],
+        "ingredients": [
+          "pizza crust",
+          "pizza sauce",
+          "mozzarella cheese",
+          "sliced mushrooms"
+        ],
+        "container": null
+      },
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "cooked sausage"
+        ],
+        "container": "stove"
+      }
+    ],
+    "motion_node": "place",
+    "output_nodes": [
+      {
+        "label": "pizza pan",
+        "states": [],
+        "ingredients": [
+          "pizza crust",
+          "pizza sauce",
+          "mozzarella cheese",
+          "sliced mushrooms",
+          "cooked sausage"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pizza pan",
+        "states": [],
+        "ingredients": [
+          "pizza crust",
+          "pizza sauce",
+          "mozzarella cheese",
+          "sliced mushrooms",
+          "cooked sausage"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "bake",
+    "output_nodes": [
+      {
+        "label": "pizza pan",
+        "states": [],
+        "ingredients": [
+          "cooked pizza"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

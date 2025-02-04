@@ -1,0 +1,249 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "spinach",
+        "states": [
+          "unwashed"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "fill",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "spinach"
+        ],
+        "container": null
+      },
+      {
+        "label": "spinach",
+        "states": [
+          "unwashed"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "spinach"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "wash",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "spinach"
+        ],
+        "container": null
+      },
+      {
+        "label": "spinach",
+        "states": [
+          "washed"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "place-on",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": "stove"
+      },
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn-on",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "spinach"
+        ],
+        "container": null
+      },
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": "stove"
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "spinach"
+        ],
+        "container": "stove"
+      },
+      {
+        "label": "spinach",
+        "states": [
+          "washed"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "spinach"
+        ],
+        "container": "stove"
+      }
+    ],
+    "motion_node": "cook",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "not empty"
+        ],
+        "ingredients": [
+          "spinach"
+        ],
+        "container": "stove"
+      },
+      {
+        "label": "spinach",
+        "states": [
+          "cooked"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn-off",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "bottle",
+        "states": [
+          "containing balsamic vinegar"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "bottle",
+        "states": [
+          "partially empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "contains balsamic vinegar"
+        ],
+        "ingredients": [
+          "balsamic vinegar"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bottle",
+        "states": [
+          "containing red wine vinegar"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "contains balsamic vinegar"
+        ],
+        "ingredients": [
+          "balsamic vinegar"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "bottle",
+        "states": [
+          "partially empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "contains balsamic vinegar",
+          "contains red wine vinegar"
+        ],
+        "ingredients": [
+          "balsamic vinegar",
+          "red wine vinegar"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bottle",
+        "states": [
+          "containing vegetable oil"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "contains balsamic vinegar",
+          "contains red wine vinegar"
+        ],
+        "ingredients": [
+          "balsamic vinegar",
+          "red wine vinegar"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "bottle",
+        "states": [
+          "partially empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "contains balsamic vinegar",
+          "contains red wine vinegar",
+          "contains vegetable oil"
+        ],
+        "ingredients": [
+          "balsamic vinegar",
+          "red wine vinegar",
+          "vegetable oil"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bottle",
+        "states": [
+          "containing high fructose corn syrup"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "contains balsamic vinegar",
+          "contains red wine vinegar",
+          "contains vegetable oil"
+        ],
+        "ingredients": [
+          "balsamic vinegar",
+          "red wine vinegar",
+          "vegetable oil"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "bottle",
+        "states": [
+          "partially empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "contains balsamic vinegar",
+          "contains red wine vinegar",
+          "contains vegetable oil",
+          "contains high fructose corn syrup"
+        ],
+        "ingredients": [
+          "balsamic vinegar",
+          "red wine vinegar",
+          "vegetable oil",
+          "high fructose corn syrup"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "contains balsamic vinegar",
+          "contains red wine vinegar",
+          "contains vegetable oil",
+          "contains high fructose corn syrup"
+        ],
+        "ingredients": [
+          "balsamic vinegar",
+          "red wine vinegar",
+          "vegetable oil",
+          "high fructose corn syrup"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "cup",
+        "states": [
+          "contains water"
+        ],
+        "ingredients": [
+          "water"
+        ],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "contains balsamic vinegar",
+          "contains red wine vinegar",
+          "contains vegetable oil",
+          "contains high fructose corn syrup"
+        ],
+        "ingredients": [
+          "balsamic vinegar",
+          "red wine vinegar",
+          "vegetable oil",
+          "high fructose corn syrup"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "cup",
+        "states": [
+          "contains water"
+        ],
+        "ingredients": [
+          "water"
+        ],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "contains balsamic vinegar",
+          "contains red wine vinegar",
+          "contains vegetable oil",
+          "contains high fructose corn syrup"
+        ],
+        "ingredients": [
+          "balsamic vinegar",
+          "red wine vinegar",
+          "vegetable oil",
+          "high fructose corn syrup"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "cup",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mixing bowl",
+        "states": [
+          "contains balsamic vinaigrette dressing"
+        ],
+        "ingredients": [
+          "balsamic vinaigrette dressing"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

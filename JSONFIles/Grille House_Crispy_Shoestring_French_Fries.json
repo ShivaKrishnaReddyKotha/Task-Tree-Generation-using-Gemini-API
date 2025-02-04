@@ -1,0 +1,439 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "whole",
+          "unpeeled"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Peeler",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "peel",
+    "output_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "peeled"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      },
+      {
+        "label": "Knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cut",
+    "output_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      },
+      {
+        "label": "Knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "julienne",
+    "output_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "shoestring"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "shoestring"
+        ],
+        "ingredients": [],
+        "container": "Cutting board"
+      },
+      {
+        "label": "Bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "shoestring"
+        ],
+        "ingredients": [],
+        "container": "Bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Bowl",
+        "states": [],
+        "ingredients": [
+          "Potato"
+        ],
+        "container": null
+      },
+      {
+        "label": "Water",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "fill",
+    "output_nodes": [
+      {
+        "label": "Bowl",
+        "states": [],
+        "ingredients": [
+          "Potato"
+        ],
+        "container": null
+      },
+      {
+        "label": "Water",
+        "states": [],
+        "ingredients": [],
+        "container": "Bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Bowl",
+        "states": [],
+        "ingredients": [
+          "Potato",
+          "Water"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "soak",
+    "output_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "soaked"
+        ],
+        "ingredients": [],
+        "container": "Bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Bowl",
+        "states": [],
+        "ingredients": [
+          "Potato",
+          "Water"
+        ],
+        "container": null
+      },
+      {
+        "label": "Colander",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "drain",
+    "output_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "drained"
+        ],
+        "ingredients": [],
+        "container": "Colander"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "drained"
+        ],
+        "ingredients": [],
+        "container": "Colander"
+      },
+      {
+        "label": "Paper towels",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "dry",
+    "output_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "dried"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Vegetable Oil",
+        "states": [],
+        "ingredients": [],
+        "container": "Bottle"
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "Vegetable Oil",
+        "states": [],
+        "ingredients": [],
+        "container": "Pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Pot",
+        "states": [],
+        "ingredients": [
+          "Vegetable Oil"
+        ],
+        "container": null
+      },
+      {
+        "label": "Stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "place",
+    "output_nodes": [
+      {
+        "label": "Pot",
+        "states": [],
+        "ingredients": [
+          "Vegetable Oil"
+        ],
+        "container": "Stove"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn-on",
+    "output_nodes": [
+      {
+        "label": "Stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Vegetable Oil",
+        "states": [],
+        "ingredients": [],
+        "container": "Pot"
+      }
+    ],
+    "motion_node": "heat",
+    "output_nodes": [
+      {
+        "label": "Vegetable Oil",
+        "states": [
+          "hot"
+        ],
+        "ingredients": [],
+        "container": "Pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "dried"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Vegetable Oil",
+        "states": [
+          "hot"
+        ],
+        "ingredients": [],
+        "container": "Pot"
+      }
+    ],
+    "motion_node": "fry",
+    "output_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "fried",
+          "crispy"
+        ],
+        "ingredients": [],
+        "container": "Pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "fried",
+          "crispy"
+        ],
+        "ingredients": [],
+        "container": "Pot"
+      },
+      {
+        "label": "Plate",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "transfer",
+    "output_nodes": [
+      {
+        "label": "Potato",
+        "states": [
+          "fried",
+          "crispy"
+        ],
+        "ingredients": [],
+        "container": "Plate"
+      }
+    ]
+  }
+]

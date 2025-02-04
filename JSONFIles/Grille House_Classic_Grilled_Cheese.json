@@ -1,0 +1,364 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "slice",
+    "output_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "American cheese",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "place",
+    "output_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [
+          "American cheese"
+        ],
+        "container": null
+      },
+      {
+        "label": "American cheese",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "bread"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [
+          "American cheese"
+        ],
+        "container": null
+      },
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "place",
+    "output_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [
+          "American cheese",
+          "bread"
+        ],
+        "container": null
+      },
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [],
+        "container": "bread"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "margarine",
+        "states": [
+          "solid"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "spread",
+    "output_nodes": [
+      {
+        "label": "margarine",
+        "states": [
+          "spreadable"
+        ],
+        "ingredients": [],
+        "container": "knife"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [
+          "American cheese",
+          "bread"
+        ],
+        "container": null
+      },
+      {
+        "label": "margarine",
+        "states": [
+          "spreadable"
+        ],
+        "ingredients": [],
+        "container": "knife"
+      }
+    ],
+    "motion_node": "spread",
+    "output_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [
+          "American cheese",
+          "bread",
+          "margarine"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn_on",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "place",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": "stove"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [
+          "American cheese",
+          "bread",
+          "margarine"
+        ],
+        "container": null
+      },
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": "stove"
+      }
+    ],
+    "motion_node": "place",
+    "output_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [
+          "American cheese",
+          "bread",
+          "margarine"
+        ],
+        "container": "pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced"
+        ],
+        "ingredients": [
+          "American cheese",
+          "bread",
+          "margarine"
+        ],
+        "container": "pot"
+      }
+    ],
+    "motion_node": "flip",
+    "output_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced",
+          "grilled"
+        ],
+        "ingredients": [
+          "American cheese",
+          "bread",
+          "margarine"
+        ],
+        "container": "pot"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn_off",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced",
+          "grilled"
+        ],
+        "ingredients": [
+          "American cheese",
+          "bread",
+          "margarine"
+        ],
+        "container": "pot"
+      }
+    ],
+    "motion_node": "remove",
+    "output_nodes": [
+      {
+        "label": "bread",
+        "states": [
+          "sliced",
+          "grilled"
+        ],
+        "ingredients": [
+          "American cheese",
+          "bread",
+          "margarine"
+        ],
+        "container": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "raw"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "raw"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [
+          "chicken breast"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "salt",
+        "states": [],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "chicken breast",
+        "states": [
+          "raw"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "season",
+    "output_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "salted"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "black pepper",
+        "states": [],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "chicken breast",
+        "states": [
+          "salted"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "season",
+    "output_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "peppered"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "chicken breast",
+        "states": [
+          "peppered"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "peppered"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "chicken breast"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "canola oil",
+        "states": [],
+        "ingredients": [],
+        "container": "bottle"
+      },
+      {
+        "label": "chicken breast",
+        "states": [
+          "peppered"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "oiled"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "oiled"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "mix",
+    "output_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "marinated"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "off"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "turn on",
+    "output_nodes": [
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "stove",
+        "states": [
+          "on"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": "stove"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "marinated"
+        ],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "pot",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": "stove"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "marinated"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      },
+      {
+        "label": "pot",
+        "states": [],
+        "ingredients": [
+          "chicken breast"
+        ],
+        "container": "stove"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "marinated"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ],
+    "motion_node": "grill",
+    "output_nodes": [
+      {
+        "label": "chicken breast",
+        "states": [
+          "grilled"
+        ],
+        "ingredients": [],
+        "container": "pot"
+      }
+    ]
+  }
+]

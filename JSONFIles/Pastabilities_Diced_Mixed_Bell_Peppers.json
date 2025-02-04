@@ -1,0 +1,295 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "Green pepper",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "Green pepper",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [
+          "Green pepper"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Green pepper",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "cut",
+    "output_nodes": [
+      {
+        "label": "Green pepper",
+        "states": [
+          "halved"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Green pepper",
+        "states": [
+          "halved"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "remove core",
+    "output_nodes": [
+      {
+        "label": "Green pepper",
+        "states": [
+          "cored"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Green pepper",
+        "states": [
+          "cored"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "dice",
+    "output_nodes": [
+      {
+        "label": "Green pepper",
+        "states": [
+          "diced"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Red bell pepper",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [
+          "Green pepper"
+        ],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "Red bell pepper",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "cutting board",
+        "states": [],
+        "ingredients": [
+          "Green pepper",
+          "Red bell pepper"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Red bell pepper",
+        "states": [
+          "whole"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "cut",
+    "output_nodes": [
+      {
+        "label": "Red bell pepper",
+        "states": [
+          "halved"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Red bell pepper",
+        "states": [
+          "halved"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "remove core",
+    "output_nodes": [
+      {
+        "label": "Red bell pepper",
+        "states": [
+          "cored"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Red bell pepper",
+        "states": [
+          "cored"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "dice",
+    "output_nodes": [
+      {
+        "label": "Red bell pepper",
+        "states": [
+          "diced"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [
+          "empty"
+        ],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "Green pepper",
+        "states": [
+          "diced"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      },
+      {
+        "label": "Red bell pepper",
+        "states": [
+          "diced"
+        ],
+        "ingredients": [],
+        "container": "cutting board"
+      }
+    ],
+    "motion_node": "combine",
+    "output_nodes": [
+      {
+        "label": "Mixing bowl",
+        "states": [],
+        "ingredients": [
+          "Green pepper",
+          "Red bell pepper"
+        ],
+        "container": null
+      }
+    ]
+  }
+]
