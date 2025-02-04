@@ -1,0 +1,549 @@
+[
+    {
+        "category": "Pastabilities",
+        "menu": [
+            {
+                "dish": "Cavatappi",
+                "ingredients": [
+                    "Water",
+                    "Pasta"
+                ]
+            },
+            {
+                "dish": "Baby Spinach",
+                "ingredients": [
+                    "Spinach"
+                ]
+            },
+            {
+                "dish": "Diced Mixed Bell Peppers",
+                "ingredients": [
+                    "Green pepper",
+                    "Red bell pepper"
+                ]
+            },
+            {
+                "dish": "Diced Onions",
+                "ingredients": [
+                    "Onions"
+                ]
+            },
+            {
+                "dish": "Grape Tomatoes",
+                "ingredients": [
+                    "Tomatoes"
+                ]
+            },
+            {
+                "dish": "Beef Meatballs",
+                "ingredients": [
+                    "Beef",
+                    "water",
+                    "textured soy protein",
+                    "onions",
+                    "bread crumbs",
+                    "parsley flakes",
+                    "pepper",
+                    "romando cheese",
+                    "salt",
+                    "soy protein concentrate",
+                    "sugar",
+                    "turmeric extract"
+                ]
+            },
+            {
+                "dish": "Diced Chicken",
+                "ingredients": [
+                    "Chicken Breast",
+                    "Salt",
+                    "Black Pepper"
+                ]
+            },
+            {
+                "dish": "Linguine",
+                "ingredients": [
+                    "Water",
+                    "Pasta"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Central Garden",
+        "menu": [
+            {
+                "dish": "Balsamic Vinaigrette Dressing",
+                "ingredients": [
+                    "water",
+                    "high fructose corn syrup",
+                    "balsamic vinegar",
+                    "red wine vinegar",
+                    "vegetable oil"
+                ]
+            },
+            {
+                "dish": "Creamy Ceasar Dressing",
+                "ingredients": [
+                    "soybean oil",
+                    "distilled vinegar",
+                    "water",
+                    "apple cider vinegar",
+                    "romano cheese",
+                    "salt"
+                ]
+            },
+            {
+                "dish": "Lite Italian Dressing",
+                "ingredients": [
+                    "water",
+                    "distilled vinegar",
+                    "vegetable oil",
+                    "sugar",
+                    "apple cider vinegar"
+                ]
+            },
+            {
+                "dish": "Ranch Dressing",
+                "ingredients": [
+                    "soybean oil",
+                    "water",
+                    "cultured buttermilk",
+                    "egg yolk"
+                ]
+            },
+            {
+                "dish": "Shredded Carrots",
+                "ingredients": [
+                    "Carrots"
+                ]
+            },
+            {
+                "dish": "Chopped Hard-Cooked Egg",
+                "ingredients": [
+                    "hardboiled eggs"
+                ]
+            },
+            {
+                "dish": "Diced Ham",
+                "ingredients": [
+                    "ham cured with water",
+                    "salt"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Home Slice",
+        "menu": [
+            {
+                "dish": "Classic Cheese Pizza",
+                "ingredients": [
+                    "All purpose flour",
+                    "mozzarella cheese",
+                    "water",
+                    "pizza sauce",
+                    "vegetable oil blend",
+                    "salt",
+                    "granulated sugar",
+                    "yeast"
+                ]
+            },
+            {
+                "dish": "Mushroom & Sausage Pizza",
+                "ingredients": [
+                    "All purpose flour",
+                    "mozzarella cheese",
+                    "water",
+                    "pizza sauce",
+                    "mushrooms",
+                    "pork sausage topping",
+                    "vegetable oil blend",
+                    "salt",
+                    "granulated sugar",
+                    "yeast",
+                    "black pepper"
+                ]
+            },
+            {
+                "dish": "Pepperoni Pizza",
+                "ingredients": [
+                    "All purpose flour",
+                    "mozzarella cheese",
+                    "water",
+                    "pizza sauce",
+                    "deli pepperoni",
+                    "vegetable oil blend",
+                    "salt",
+                    "granulated sugar",
+                    "yeast"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "At Home",
+        "menu": [
+            {
+                "dish": "Steamed Fresh Broccoli",
+                "ingredients": [
+                    "Broccoli"
+                ]
+            },
+            {
+                "dish": "Roast Pork Adobo",
+                "ingredients": [
+                    "Pork Loin",
+                    "cider vinegar",
+                    "vegetable oil blend",
+                    "garlic",
+                    "dried oregano",
+                    "black pepper",
+                    "paprika",
+                    "salt"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Vegetabull",
+        "menu": [
+            {
+                "dish": "Jasmine Rice",
+                "ingredients": [
+                    "Water",
+                    "jasmine rice"
+                ]
+            },
+            {
+                "dish": "Soy Sauce",
+                "ingredients": [
+                    "water",
+                    "soybeans",
+                    "wheat",
+                    "salt",
+                    "lactic acid",
+                    "preservative"
+                ]
+            },
+            {
+                "dish": "Sriracha Sauce",
+                "ingredients": [
+                    "salted red chili pepper",
+                    "sugar",
+                    "garlic",
+                    "salt",
+                    "water"
+                ]
+            },
+            {
+                "dish": "Sweet and Sour Sauce",
+                "ingredients": [
+                    "Tomatoes",
+                    "sugar",
+                    "pineapple",
+                    "vinegar",
+                    "modified corn starch",
+                    "salt",
+                    "water"
+                ]
+            },
+            {
+                "dish": "Quinoa",
+                "ingredients": [
+                    "Water",
+                    "quinoa"
+                ]
+            },
+            {
+                "dish": "Rice Stick Noodles",
+                "ingredients": [
+                    "Water",
+                    "thai rice stick"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Grille House",
+        "menu": [
+            {
+                "dish": "Crispy Chicken Nuggets",
+                "ingredients": [
+                    "Cooked Boneless skinless chicken breast with rib meat",
+                    "salt",
+                    "yellow corn flour",
+                    "bleached wheat flour",
+                    "modified corn starch",
+                    "spices",
+                    "wheat starch",
+                    "onion powder",
+                    "extractives of turmeric",
+                    "spice extractive",
+                    "vegetable oil"
+                ]
+            },
+            {
+                "dish": "Grilled Seasoned Chicken Breast",
+                "ingredients": [
+                    "Chicken breast",
+                    "canola oil",
+                    "salt",
+                    "black pepper"
+                ]
+            },
+            {
+                "dish": "Hamburger",
+                "ingredients": [
+                    "Beef patty",
+                    "roll",
+                    "wheat flour",
+                    "malted barley flour",
+                    "water",
+                    "high fructose corn syrup",
+                    "yeast",
+                    "soybean oil",
+                    "salt",
+                    "wheat gluten",
+                    "sesame flour"
+                ]
+            },
+            {
+                "dish": "Crispy Chicken Sandwich",
+                "ingredients": [
+                    "Boneless chicken breast with rib meat",
+                    "water",
+                    "salt",
+                    "roll",
+                    "wheat flour",
+                    "wheat gluten",
+                    "garlic powder",
+                    "onion powder",
+                    "vegetable oil",
+                    "malted barley"
+                ]
+            },
+            {
+                "dish": "Classic Grilled Cheese",
+                "ingredients": [
+                    "Bread",
+                    "American cheese",
+                    "margarine"
+                ]
+            },
+            {
+                "dish": "Crispy Shoestring French Fries",
+                "ingredients": [
+                    "Potatoes",
+                    "Vegetable Oil"
+                ]
+            },
+            {
+                "dish": "Sliced Red Onions",
+                "ingredients": ["Onions"]
+            },
+            {
+                "dish": "Sliced Tomatoes",
+                "ingredients": ["Tomatoes"]
+            },
+            {
+                "dish": "Cheddar Cheese",
+                "ingredients": [
+                    "pasteurized milk",
+                    "cheese culture",
+                    "salt",
+                    "enzymes",
+                    "annatto"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Pita & Co.",
+        "menu": [
+            {
+                "dish": "Quinoa Tabbouleh",
+                "ingredients": [
+                    "Quinoa",
+                    "water",
+                    "parsley",
+                    "lemon juice",
+                    "extra virgin olive oil",
+                    "green onion",
+                    "salt",
+                    "garlic",
+                    "black pepper"
+                ]
+            },
+            {
+                "dish": "Pita Chips",
+                "ingredients": [
+                    "Pita Wrap",
+                    "vegetable oil blend",
+                    "cumin",
+                    "garlic powder",
+                    "black pepper",
+                    "salt"
+                ]
+            },
+            {
+                "dish": "Hummus",
+                "ingredients": [
+                    "Garbanzo Beans",
+                    "sesame seeds",
+                    "vegetable oil blend",
+                    "lemon juice",
+                    "garlic",
+                    "salt"
+                ]
+            },
+            {
+                "dish": "Sumac Onions",
+                "ingredients": [
+                    "Onion",
+                    "lemon juice",
+                    "ground sumac",
+                    "salt"
+                ]
+            },
+            {
+                "dish": "Diced Cucumber",
+                "ingredients": [
+                    "Cucumber"
+                ]
+            },
+            {
+                "dish": "Feta Cheese Crumbles",
+                "ingredients": [
+                    "Pasteurized part skim milk",
+                    "cheese culture",
+                    "salt",
+                    "enzymes",
+                    "anti caking blend"
+                ]
+            },
+            {
+                "dish": "Yellow Rice",
+                "ingredients": [
+                    "Water",
+                    "white rice",
+                    "vegetable base",
+                    "canola oil",
+                    "salt",
+                    "turmeric"
+                ]
+            },
+            {
+                "dish": "Baba Ghanoush",
+                "ingredients": [
+                    "Egg Plant",
+                    "sesame seeds",
+                    "canola oil",
+                    "lemon juice",
+                    "garlic",
+                    "salt",
+                    "parsley",
+                    "black pepper"
+                ]
+            },
+            {
+                "dish": "Zhug Sauce",
+                "ingredients": [
+                    "Vegetable Oil Blend",
+                    "jalapeno pepper",
+                    "lemon juice",
+                    "parsley",
+                    "cilantro",
+                    "salt"
+                ]
+            },
+            {
+                "dish": "Falafel",
+                "ingredients": [
+                    "Chickpeas",
+                    "water",
+                    "onions",
+                    "parsley",
+                    "cilantro",
+                    "salt",
+                    "serrano peppers",
+                    "garlic puree"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Delish",
+        "menu": [
+            {
+                "dish": "Signature Chips",
+                "ingredients": [
+                    "Potato Chips",
+                    "granulated sugar",
+                    "black pepper blend",
+                    "garlic pepper seasoning"
+                ]
+            },
+            {
+                "dish": "Creamy Tuna Salad",
+                "ingredients": [
+                    "Tuna",
+                    "water",
+                    "salt",
+                    "vegetable broth",
+                    "mayonnaise",
+                    "celery",
+                    "lemon juice",
+                    "black pepper"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Daily Sweet",
+        "menu": [
+            {
+                "dish": "Cookie Crumb Cupcake",
+                "ingredients": [
+                    "Devils Food Cake",
+                    "vanilla icing",
+                    "water",
+                    "oreo pieces"
+                ]
+            },
+            {
+                "dish": "Chocolate Chip Cookie",
+                "ingredients": [
+                    "enriched bleached wheat flour",
+                    "sugar",
+                    "palm oil",
+                    "semi sweet chocolate chips",
+                    "chocolate flavoured confectionary chips",
+                    "margarine",
+                    "water",
+                    "eggs"
+                ]
+            },
+            {
+                "dish": "Sugar Cookie",
+                "ingredients": [
+                    "enriched bleached wheat flour",
+                    "sugar",
+                    "margarine",
+                    "water",
+                    "eggs"
+                ]
+            },
+            {
+                "dish": "Chocolate Pudding Parfait",
+                "ingredients": [
+                    "water",
+                    "skim milk",
+                    "modified corn starch",
+                    "whey",
+                    "cocoa",
+                    "whipped topping"
+                ]
+            }
+        ]
+    }
+]
